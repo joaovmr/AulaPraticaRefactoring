@@ -36,4 +36,10 @@ public class Rental {
         }
       return thisAmount;
     }
+   public int getFrequentRenterPoints(){
+      //Adicionar o trecho de código extraído.
+      if ((_movie.getPriceCode() == Movie.NEW_RELEASE) &&
+          _daysRented > 1) return 2;
+      return 1;
+   }
 }
